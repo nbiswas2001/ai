@@ -1,0 +1,1 @@
+ conda activate E:\Dev\AI\environments\tf

@@ -1,0 +1,21 @@
+1. Create a new conda environment named 'tf' with the following command.
+   > conda create --prefix E:\Dev\AI\environments\tf python=3.9 anaconda
+
+2. Activate it 
+   > conda activate tf
+
+3. Install NVIDIA GPU driver if you have not. Should be already installed.
+
+4. Install the CUDA, cuDNN with conda.
+   > conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+
+5. Install PIP
+   > E:\Dev\AI>E:\Dev\AI\environments\tf\python.exe -m pip install --upgrade pip
+
+
+5. Install TensorFlow
+   > pip install "tensorflow<2.11"
+
+6. Verify the CPU and GPU setup:
+   > python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+   > python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"

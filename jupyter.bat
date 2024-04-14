@@ -1,0 +1,1 @@
+%CONDA_HOME%\python.exe %CONDA_HOME%\cwp.py E:\Dev\AI\environments\tf E:\Dev\AI\environments\tf\python.exe E:\Dev\AI\environments\tf\Scripts\jupyter-notebook-script.py E:\Dev\AI\notebooks
